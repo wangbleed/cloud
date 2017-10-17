@@ -1,0 +1,5 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+EurekaServer/target
+EurekaServer/EurekaServer.iml
+cloud.iml
