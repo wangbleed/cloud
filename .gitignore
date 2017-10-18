@@ -1,5 +1,17 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea/
+ConfigClient/target
+ConfigClient/ConfigClient.iml
+ConfigServer/target
+ConfigServer/ConfigServer.iml
+EurekaClient/target
+EurekaClient/EurekaClient.iml
 EurekaServer/target
-EurekaServer/EurekaServer.iml
+EurekaServer/eurekaserver.iml
+FeignSerice/target
+FeignSerice/FeignSerice.iml
+RibbonService/target
+RibbonService/RibbonService.iml
+ZuulService/target
+ZuulService/ZuulService.iml
 cloud.iml
