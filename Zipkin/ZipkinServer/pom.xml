@@ -3,44 +3,26 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.ryan.cloud.configclient</groupId>
-	<artifactId>ConfigClient</artifactId>
+	<groupId>com.ryan.cloud.zipkinserver</groupId>
+	<artifactId>ZipkinServer</artifactId>
 	<version>${project.cloud.version}</version>
 	<packaging>jar</packaging>
 
-	<name>ConfigClient</name>
+	<name>ZipkinServer</name>
 	<description></description>
 
 	<parent>
-		<groupId>com.ryan.cloud</groupId>
-		<artifactId>cloud</artifactId>
+		<groupId>com.ryan.cloud.zipkin</groupId>
+		<artifactId>Zipkin</artifactId>
 		<version>${project.cloud.version}</version>
 	</parent>
 
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.retry</groupId>
-			<artifactId>spring-retry</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
-		</dependency>
-
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-aop</artifactId>
-		</dependency>
 
-
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -48,13 +30,13 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+			<groupId>io.zipkin.java</groupId>
+			<artifactId>zipkin-server</artifactId>
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
+			<groupId>io.zipkin.java</groupId>
+			<artifactId>zipkin-autoconfigure-ui</artifactId>
 		</dependency>
 	</dependencies>
 
